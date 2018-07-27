@@ -13,18 +13,19 @@ Pod::Spec.new do |s|
   #  These will help people to find your library, and whilst it
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
-  #
+ #
 
   s.name         = "lwStore"
-  s.version      = "0.0.1"
-  s.summary      = "A iOS LaunchAd show  of lwStore."
+  s.version      = "1.0.0"
+  s.summary      = "A iOS lwStore  show  of lwStore."
   
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  # s.description  = <<-DESC
+     s.description  = <<-DESC
+                      lwStore is a product details module packaging, simple integration through cocoapods.
                    DESC
 
   s.homepage     = "https://github.com/Hehong0417/lw_store.git"
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  =  "Detail"
+  s.exclude_files = "lwStore/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
