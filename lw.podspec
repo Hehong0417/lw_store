@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint lw_store.podspec' to ensure this is a
+#  Be sure to run `pod spec lint lw.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "lw_store"
-  s.version      = "0.0.1"
-  s.summary      = "just testing."
+  s.name         = "lw"
+  s.version      = "1.0.0"
+  s.summary      = "Just Testing"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                         test private podspec.
+          Testing Private Podspec
                    DESC
 
   s.homepage     = "https://github.com/Hehong0417/lw_store.git"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "Detail", "Detail/**/*.{h,m}"
-  s.exclude_files = "Deatail/Exclude"
+  s.exclude_files = "Detail/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
