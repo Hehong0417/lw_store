@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint lwStore.podspec' to ensure this is a
+#  Be sure to run `pod spec lint lw_store.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -13,19 +13,19 @@ Pod::Spec.new do |s|
   #  These will help people to find your library, and whilst it
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
- #
+  #
 
-  s.name         = "lwStore"
-  s.version      = "1.0.0"
-  s.summary      = "A iOS lwStore  show  of lwStore."
-  
+  s.name         = "lw_store"
+  s.version      = "0.0.1"
+  s.summary      = "just testing."
+
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-     s.description  = <<-DESC
-                      lwStore is a product details module packaging, simple integration through cocoapods.
+  s.description  = <<-DESC
+                         test private podspec.
                    DESC
 
   s.homepage     = "https://github.com/Hehong0417/lw_store.git"
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform     = :ios, "7.0"
+   s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/Hehong0417/lw_store.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  =  "Detail"
-  s.exclude_files = "lwStore/Exclude"
+  s.source_files  = "Detail", "Detail/**/*.{h,m}"
+  s.exclude_files = "Deatail/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.frameworks  = "UIKit","Foundation"
+  # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -130,9 +130,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   s.requires_arc = true
+  # s.requires_arc = true
 
-   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
